@@ -1,0 +1,13 @@
+<%page import="java.io.*" %>
+<HTML>
+ <HEAD>
+  <TITLE> Deprication Table </TITLE>
+ </HEAD>
+<BODY BGCOLOR="GREY">
+<CENTER>
+ <% int cost = Integer.parseInt(request.getParameter("Cost"));
+    int scrap = Integer.parseInt(request.getParameter("Scrap"));
+    int life = Integer.parseInt(request.getParameter("Life"));
+    if(!cost.isDigit() || !scrap.isDigit() || !life.isDigit()){
+	
+    
